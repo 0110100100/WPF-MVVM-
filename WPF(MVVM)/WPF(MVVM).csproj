@@ -55,7 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\ClientModel.cs" />
+    <Compile Include="Models\ConsultantModel.cs" />
+    <Compile Include="Models\ManagerModel.cs" />
+    <Compile Include="ViewModels\ConsultantVM.cs" />
+    <Compile Include="ViewModels\MainWindowView.cs" />
     <Compile Include="ViewModels\Base\ViewBase.cs" />
+    <Compile Include="ViewModels\ManagerVM.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,7 +102,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
